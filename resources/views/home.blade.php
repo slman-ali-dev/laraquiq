@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" style=" background-color: #fff !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="logo horizontal-logo" src="./assets/quiq.png" alt="quiq logo" width="20%">
+                <img class="logo horizontal-logo" src="{{ asset('assets/quiq.png') }}" alt="quiq logo" width="20%">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,22 +41,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <img src="./assets/home1.png" alt="" srcset="" class="images">
+                <img src="{{ asset('assets/home1.png') }}" alt="" srcset="" class="images">
             </div>
             <div class="col-md-5 center">
                 <h1 class="text">ابدأ الان دروسك الافتراضية</h1>
-                <button id="signUp" class="center">تسجيل حساب</button>
+                <a href="/authentication" class="registerBtn center">تسجيل حساب</a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-5 center">
                 <h1 class="text-right"> ؟ quiq ما هي </h1>
                 <p class="ar">هي منصة مخصصة لكل الراغبين بالتعلم الافتراضي و عقد الاجتماعات بطريقة سهلة وبسيطة بغض النظر عن مواصفات الجهاز المتوفر لديك كما نقدم العديد من خدمات الصف الافتراضي وحلول الأعمال والشركات وطرق تواصل فورية للأفراد عن بعد</p>
-                <button id="signUp1">تسجيل حساب</button>
+                <a href="/authentication" class="registerBtn" >تسجيل حساب</a>
 
             </div>
             <div class="col-md-7">
-                <img src="./assets/home2.png" alt="" srcset="" class="images pos">
+                <img src="{{ asset('assets/home2.png') }}" alt="" srcset="" class="images pos">
             </div>
         </div>
         <div class="row">
@@ -64,18 +64,18 @@
                 <h2 class="text">؟ quiq ماذا تقدم لك </h2>
             </div>
             <div class="col-md-4 center">
-                <img src="./assets/training.png" alt="training" srcset="" width=40%>
+                <img src="{{ asset('assets/training.png') }}" alt="training" srcset="" width=40%>
                 <h3 class="service">صفوف افتراضية متكاملة</h3>
             </div>
             <div class="col-md-4 center">
-                <img src="./assets/information.png" alt="training" srcset="" width=40%>
+                <img src="{{ asset('assets/information.png') }}" alt="training" srcset="" width=40%>
                 <h3 class="service">أدوات تفاعلية مميزة</h3>
             </div>
             <div class="col-md-4 center">
-                <img src="./assets/computer.png" alt="training" srcset="" width=40%>
+                <img src="{{ asset('assets/computer.png') }}" alt="training" srcset="" width=40%>
                 <h3 class="service">دعم مستمر 24/7</h3>
             </div>
-            <div class="col-md-12 center"> <button id="signUp">احصل على فترتك التجريبية مجانا</button>
+            <div class="col-md-12 center"> <a href="/authentication" class="registerBtn" >احصل على فترتك التجريبية مجانا</a>
             </div>
         </div>
 
@@ -85,27 +85,27 @@
                     <h2 class="text">quiq خدماتنا في </h2>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/exam.png" alt="exam" srcset="" width=20%>
+                    <img src="{{ asset('assets/exam.png') }}" alt="exam" srcset="" width=20%>
                     <h3 class="service"> حلول متخصصة بالصف الافتراضي </h3>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/share.png" alt="share" srcset="" width=20%>
+                    <img src="{{ asset('assets/share.png') }}" alt="share" srcset="" width=20%>
                     <h3 class="service"> مشاركة الشاشة والصوت وجميع أنواع الملفات </h3>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/voice-recorder.png" alt="share" srcset="" width=20%>
+                    <img src="{{ asset('assets/voice-recorder.png') }}" alt="share" srcset="" width=20%>
                     <h3 class="service"> تسجيل الجلسة بدقة عالية و حجم مناسب </h3>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/computer1.png" alt="share" srcset="" width=20%>
+                    <img src="{{ asset('assets/computer1.png') }}" alt="share" srcset="" width=20%>
                     <h3 class="service">مشاركة الطلاب في الدرس عبر الية تفاعلية مميزة </h3>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/elearning.png" alt="share" srcset="" width=20%>
+                    <img src="{{ asset('assets/elearning.png') }}" alt="share" srcset="" width=20%>
                     <h3 class="service">التحكم الكامل لمدير الجلسة </h3>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="./assets/online-learning.png" alt="share" srcset="" width=20%>
+                    <img src="{{ asset('assets/online-learning.png') }}" alt="share" srcset="" width=20%>
                     <h3 class="service">اللوح الافتراضي للشرح مباشرة للطلاب </h3>
                 </div>
             </div>
@@ -113,16 +113,16 @@
         <div class="row">
             <div class="col-md-5 center">
                 <h1 class="text">تابع طلابك أينما كانوا</h1>
-                <button id="signup2" class="center">ابدأ الان</button>
+                <a href="/authentication" class="registerBtn center">ابدأ الان</a>
             </div>
             <div class="col-md-7">
-                <img src="./assets/home3.png" alt="" srcset="" class="images pos">
+                <img src="{{ asset('assets/home3.png') }}" alt="" srcset="" class="images pos">
             </div>
         </div>
     </div>
     <div class="row background1">
         <div class="col-md-7">
-            <img src="./assets/main.png" alt="" srcset="" class="image">
+            <img src="{{ asset('assets/main.png') }}" alt="" srcset="" class="image">
         </div>
         <div class="col-md-5 res">
             <h3 class="text" style="color: #fff;">اراء عملائنا</h3>
@@ -176,7 +176,7 @@
                     <div class="col-md-6 item ">
                         <div class="row">
                             <div class="col-md-12">
-                                <img src="./assets/quiq.png" alt="" srcset="" width=40% style="float: right;">
+                                <img src="{{ asset('assets/quiq.png') }}" alt="" srcset="" width=40% style="float: right;">
                             </div>
                         </div>
                         <h3 style="text-align: right;line-height: 3.2rem;"> منصة متخصصة للصفوف الافتراضية وخدمات </br> المؤتمرات والتعليم التفاعلي الأسرع في سورية </h3>
@@ -189,7 +189,7 @@
         </footer>
     </div>
 
-    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <script src="{{ asset('assets/fontawesome/js/all.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
